@@ -1,0 +1,23 @@
+.container-lines {
+  text-align: center;
+}
+
+.line {
+  width: 4px;
+  margin: 10px auto;
+  height: 100px;
+  border-radius: 60px;
+  background: linear-gradient(180deg, rgba(36, 44, 55, 0) 0%, #575d66 100%);
+}
+
+.text-bio {
+  cursor: pointer;
+  transition: transform 250ms;
+  transition: 2s;
+}
+
+.custom-theme {
+  background: #161b22 !important;
+  border: 1px solid var(--purple-color) !important;
+  border-radius: 10px !important;
+}

@@ -1,0 +1,141 @@
+:root {
+  /* Dark Mode */
+  --black-color-bg: #0d1117;
+  --gray-color: #161b22;
+  --purple-color: #acb4fe;
+  --purple-smoke-color: #cdd0f3;
+  --white-smoke-color: #8b949e;
+  --white-color: #e5e5e5;
+  --gradient-color: linear-gradient(99.51deg, #cbbee7 9.03%, #ffffff 89.53%);
+
+  /* Light Mode */
+  --white-color-bg: #e1e3f9;
+  --white-color-smoke-bg: #cdd0f3;
+  --purple-dark-color: #ae88fe;
+  --black-color: #212121;
+  --white-gradient-color: linear-gradient(
+    99.51deg,
+    #acb4fe 9.03%,
+    #ae88fe 89.53%
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--white-smoke-colorcolor);
+}
+
+.dark-mode {
+  transition: 150ms;
+  background-color: var(--black-color-bg);
+}
+
+.white-mode {
+  transition: 150ms;
+  background-color: var(--white-color-bg);
+}
+
+.white-mode .header-title {
+  background: var(--white-gradient-color);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.white-mode a {
+  color: var(--purple-dark-color);
+}
+
+.white-mode .header-title-box {
+  background-color: var(--white-color-smoke-bg);
+  color: var(--black-color);
+}
+
+.white-mode .container-icon {
+  background-color: var(--white-color-smoke-bg);
+}
+
+.white-mode .mode-icon {
+  color: var(--purple-dark-color);
+}
+
+.purple-text {
+  color: var(--purple-color);
+}
+
+.purple-smoke-text {
+  color: var(--purple-smoke-color);
+}
+
+.white-text {
+  font-weight: 500;
+  color: var(--white-color);
+}
+
+.gray-text {
+  color: var(--white-smoke-color);
+}
+
+.white-mode .purple-text {
+  color: var(--purple-dark-color);
+}
+
+.white-mode .gray-text {
+  color: var(--black-color);
+}
+
+.white-mode .white-text {
+  color: var(--black-color);
+}
+
+.white-mode .purple-smoke-text {
+  color: var(--gray-color);
+}
+
+.white-mode .project-box {
+  background-color: var(--purple-smoke-color);
+}
+
+.white-mode .link-decoration {
+  color: var(--purple-dark-color);
+}
+
+.white-mode .icon-change{
+  color: var(--purple-dark-color);
+}
+
+.white-mode .line {
+  background: linear-gradient(
+    180deg,
+    #e1e3f9 0%,
+    var(--purple-dark-color) 100%
+  );
+}
+
+.container {
+  position: relative;
+  width: auto;
+  max-width: 40rem;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 425px) {
+  .container {
+    max-width: 100%;
+    padding: 5px;
+  }
+}

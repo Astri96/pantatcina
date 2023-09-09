@@ -1,0 +1,10 @@
+.container-bio-details {
+  text-align: start;
+  max-width: 180px;
+  padding:  0.5rem;
+  font-size: 16px;
+}
+
+.details-items {
+  margin: 0.5rem 0;
+}
